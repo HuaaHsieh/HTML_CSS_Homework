@@ -1,0 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+box-sizing: border-box;
+}
+
+/* end of CSS reset */
+
+body{
+    margin: 0 auto;
+}
+
+.wrap{
+    margin: 0 auto;
+    width: 1110px;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-family: Microsoft JhengHei;
+}
+
+/* topBar */
+
+.topBar{
+    margin: 0 auto;
+    background-color: #F6F6F8;
+}
+
+.topBar .wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.topBar .wrap img{
+    margin: 8px 5px 8px 30px ;
+    max-width: 16px; max-height: 16px;
+    display: block;
+}
+
+.topBar .wrap a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.topBar .wrap a:hover{
+    text-decoration: underline;
+}
+
+/* header */
+
+.header .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    background-image:url(img/hexschool-logo.png);
+    background-repeat: no-repeat;
+    width: 151px; height: 36px;
+    display: block;
+    text-indent: 152px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.header .wrap ul{
+    display: flex;
+}
+
+.header .wrap li{
+    padding: 30px 10px 30px 20px;
+    text-align: center;
+}
+
+.header .wrap li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #00251A;
+    padding: 30px 0px 26px 0px;
+    
+}
+
+.header li a:hover{
+    border-bottom: 4px solid #00CC99;
+}
+
+/* banner */
+
+.banner{
+    background-image: url(img/header_background.png);
+    width: 100%;
+    padding: 125px 0px ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.banner-text{
+    width: 100%;
+    padding: 26.5px 0px;
+    background-color: #FFFFFF15;
+    
+}
+
+.banner-text h1{
+    display: flex;
+	align-items: center;
+	padding: 0px 25%;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 43.2px;
+    color: #1E1E1E;
+}
+
+/* content & course */
+
+.content .wrap{
+    display: flex;
+    justify-content: space-around;
+}
+
+.course{
+    width: 350px;
+    line-height: 24px;
+    margin: 50px 0 60px 0;
+    box-shadow: 0px 2px 4px rgb(224, 224, 224, 0.16);	
+    border-radius: 5px;
+    
+}
+
+.course .logo{
+    width: 350px; height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+}
+
+.course h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.course p{
+    padding: 0px 20px 0px 20px;
+    text-align: left;
+}
+
+
+
+.course li{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0 30px;
+    text-indent: -5px;
+    text-align: left;
+}
+
+.wrap h2{
+    font-size: 24px;
+    margin: 10px 0 20px 0;
+    font-weight: bold;
+    
+}
+
+/* comparison */
+
+.comparison{
+    margin: 0 auto;
+    width: 920px;
+    text-align: left;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+.comparison th{
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    font-weight: bold;
+}
+
+.comparison td{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/* customer information */
+
+.customerInfo{
+    height: 455px;
+    background: -webkit-linear-gradient(top, #E4FFF8, #A2DDCE);
+}
+
+.customerInfo .wrap{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.customerInfo h2{
+    font-size: 24px;
+    line-height: 28.8px;
+    font-weight: 600;
+    padding: 20px 0 0 0;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 782px;
+}
+
+.detail ,.remark{
+    text-align: left;
+    height: 235.2px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+.detail input{
+    width: 351px; height: 38px;
+    display: block;  
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+}
+
+textarea{
+    width: 350px; height: 200px;
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+    display: block;
+}
+
+.form label{
+    margin-top: 16px;
+}
+
+.form input, textarea{
+    margin-top: 8px;
+}
+
+::-webkit-input-placeholder{
+    color: #999999;
+    font-size: 16px;
+    font-family: Microsoft JhengHei UI;
+}
+
+.customerInfo #submit{
+    width: 159px; height: 38px;
+    background-color: #00251A;
+    color: #fff;
+    font-size: 16px;
+    margin-top:30px;
+    cursor: pointer;
+}
+
+span{
+    color: #00CC99; 
+    font-weight: bold;
+}
+
+/* footer */
+
+.footer .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactInfo{
+    text-align: left;
+    line-height: 1.5;
+    padding: 10px 0 10px 0;
+}
+
+.contactInfo a{
+    text-decoration: none;
+    color: #00CC99; 
+    font-weight: bold;
+}
+
+.contactInfo a:hover{
+    text-decoration: underline;
+}
+
+.footer .logo{
+    background-image:url(img/hexschool-logo.png);
+    background-repeat: no-repeat;
+    width: 151px; height: 36px;
+    display: block;
+    text-indent: 152px;
+    overflow: hidden;
+    white-space: nowrap;
+}
