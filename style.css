@@ -229,10 +229,12 @@ body{
     border-top: 1px solid #CCCCCC;
     border-bottom: 1px solid #CCCCCC;
     font-weight: bold;
+    width: 230px;
 }
 
 .comparison td{
     border-bottom: 1px solid #CCCCCC;
+    width: 230px;
 }
 
 /* customer information */
